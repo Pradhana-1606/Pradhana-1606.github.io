@@ -85,7 +85,6 @@
 .about {
   width: 100%;
   min-height: 100vh;
-  
 }
 
 .about .wavetop {
@@ -99,6 +98,7 @@
 .about .container {
   margin-top: 3rem;
   text-align: justify;
+  padding: 0 2rem;
 }
 
 .about h3 {
@@ -111,7 +111,8 @@
 
 .about p {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
   margin-bottom: 0.5rem;
 }
 
@@ -151,4 +152,8 @@
     margin-top: -10vh;
     margin-left: -2.5rem;
   }
+
+.about .wavetop {
+  height: 15vh;
+}
 }
