@@ -138,10 +138,14 @@
 
 @media only screen and (max-width: 62em) {
   .collapse {
-    background-color: rgba(63, 61, 61, 0.8);
+    background-color: rgba(63, 61, 61, 0.9);
     display: flex;
     text-align: center;
     box-shadow: 1px 1px 5px rgba(234, 234, 234, 0.8);
+  }
+
+  .collapse .navbar-nav .nav-link {
+    color: #fff;
   }
 
   .landing .introduce .text {
