@@ -1,25 +1,23 @@
 /* navbar */
+.navbar {
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  left: 0;
+}
+
 .container .navbar-brand {
   font-size: 2rem;
   font-weight: 900;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
+  text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.2);
 }
 
 .navbar .navbar-nav .nav-link {
   font-size: 1rem;
   font-weight: 600;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: black;
-}
-
-.navbar .navbar-nav .nav-link:hover::after {
-  content: '';
-  display: block;
-  border-bottom: 3px solid royalblue;
-  border-radius: 3px;
-  width: 50%;
-  margin: auto;
-  margin-bottom: -3px;
 }
 
 .navbar .social {
@@ -31,4 +29,126 @@
 .navbar .social .nav-social {
   color: black;
   margin: 0 0.5rem;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* header/landing */
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.landing .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 77vh;
+}
+
+.landing .animation {
+  width: 25rem;
+  margin-bottom: -7rem;
+}
+
+.landing .introduce {
+  margin-bottom: -7rem;
+}
+
+.landing .introduce .text {
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.landing .introduce .hi {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.landing .wave {
+  width: 100%;
+  height: 23vh;
+  background-image: url('../img/wavebot.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* about */
+.about {
+  width: 100%;
+  min-height: 100vh;
+  
+}
+
+.about .wavetop {
+  width: 100%;
+  height: 23vh;
+  background-image: url('../img/wavetop.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about .container {
+  margin-top: 3rem;
+  text-align: justify;
+}
+
+.about h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.about .quotes {
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+@media only screen and (min-width: 62em) {
+  .navbar .navbar-nav .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid royalblue;
+    border-radius: 3px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: -3px;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .collapse {
+    background-color: rgba(63, 61, 61, 0.8);
+    display: flex;
+    text-align: center;
+    box-shadow: 1px 1px 5px rgba(234, 234, 234, 0.8);
+  }
+
+  .landing .introduce .text {
+    display: none;
+  }
+
+  .landing .animation {
+    margin-top: -10vh;
+    margin-left: -2.5rem;
+  }
 }
