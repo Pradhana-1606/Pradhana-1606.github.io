@@ -1,4 +1,8 @@
 /* navbar */
+body {
+  min-height: 1000vh;
+}
+
 .navbar {
   position: absolute;
   z-index: 999;
@@ -76,7 +80,7 @@
 .landing .wave {
   width: 100%;
   height: 23vh;
-  background-image: url('../img/wavebot.svg');
+  background-image: url("../img/wavebot.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -90,7 +94,7 @@
 .about .wavetop {
   width: 100%;
   height: 23vh;
-  background-image: url('../img/wavetop.svg');
+  background-image: url("../img/wavetop.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -104,7 +108,7 @@
 .about h3 {
   font-size: 2rem;
   font-weight: 700;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -112,7 +116,7 @@
 .about p {
   font-size: 1rem;
   font-weight: 500;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   margin-bottom: 0.5rem;
 }
 
@@ -122,6 +126,52 @@
   font-weight: 400;
   text-align: center;
   margin-top: 3rem;
+}
+
+/* skills */
+.skills .row img {
+  width: 12rem;
+  margin: 2rem 0;
+}
+
+/* projects */
+.projects {
+  text-align: center;
+}
+
+.projects h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  margin: 5rem auto 2rem;
+}
+
+.projects p {
+  font-size: 1.3rem;
+  font-family: 'Raleway', sans-serif;
+  margin: 3rem 0;
+}
+
+.projects .card .card-body img {
+  width: 8rem;
+}
+
+.projects .card .card-body a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  background-color: #0277BD;
+}
+
+/* contacts */
+.contacts {
+  text-align: center;
+}
+
+.contacts h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  margin: 5rem auto 2rem;
 }
 
 @media only screen and (min-width: 62em) {
@@ -138,14 +188,13 @@
 
 @media only screen and (max-width: 62em) {
   .collapse {
-    background-color: rgba(63, 61, 61, 0.9);
-    display: flex;
+    background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
-    box-shadow: 1px 1px 5px rgba(234, 234, 234, 0.8);
+    box-shadow: 2px 2px 4px rgba(234, 234, 234, 0.8);
   }
 
   .collapse .navbar-nav .nav-link {
-    color: #fff;
+    color: #6e6e6e;
   }
 
   .landing .introduce .text {
@@ -157,7 +206,7 @@
     margin-left: -2.5rem;
   }
 
-.about .wavetop {
-  height: 15vh;
-}
+  .about .wavetop {
+    height: 15vh;
+  }
 }
