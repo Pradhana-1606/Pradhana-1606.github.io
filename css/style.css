@@ -152,6 +152,10 @@ body {
   margin: 3rem 0;
 }
 
+.projects .card {
+  margin-bottom: 1.5rem;
+}
+
 .projects .card .card-body img {
   width: 8rem;
 }
@@ -172,6 +176,26 @@ body {
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   margin: 5rem auto 2rem;
+}
+
+.contacts p {
+  font-size: 1.3rem;
+  font-family: 'Raleway', sans-serif;
+  margin: 3rem 0 1rem;
+}
+
+.contacts .social {
+  margin-top: 3rem;
+}
+
+.contacts .social a {
+  color: #000;
+  font-size: 2.5rem;
+  margin: 0 1rem;
+}
+
+.contacts .social a:hover {
+  color: #6e6e6e;
 }
 
 @media only screen and (min-width: 62em) {
