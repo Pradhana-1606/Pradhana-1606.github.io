@@ -199,6 +199,17 @@ html {
   color: #6e6e6e;
 }
 
+/* top */
+.totop a {
+  font-size: 3rem;
+  position: fixed;
+  z-index: 99999;
+  bottom: 0;
+  right: 0;
+  margin: 1.5rem;
+  color: rgba(110, 110, 110, 0.4);
+}
+
 /* footer */
 footer {
   width: 100%;
