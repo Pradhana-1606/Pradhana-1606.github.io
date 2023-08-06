@@ -1,8 +1,9 @@
-/* navbar */
-body {
-  min-height: 1000vh;
+html {
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
 }
 
+/* navbar */
 .navbar {
   position: absolute;
   z-index: 999;
@@ -198,6 +199,51 @@ body {
   color: #6e6e6e;
 }
 
+/* footer */
+footer {
+  width: 100%;
+  color: #fff;
+  background-color: #0D3182;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+footer .container {
+  padding: 2rem;
+}
+
+footer .logo {
+  width: 17rem;
+}
+
+footer .copyright {
+  margin-top: 1rem;
+}
+
+footer .copyright p {
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+footer .footer-menu {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+footer .footer-menu a {
+  color: #fff;
+  padding: 0 0.4rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+footer .footer-menu a:hover {
+  color: #6e6e6e;
+}
+
 @media only screen and (min-width: 62em) {
   .navbar .navbar-nav .nav-link:hover::after {
     content: "";
@@ -207,6 +253,10 @@ body {
     width: 50%;
     margin: auto;
     margin-bottom: -3px;
+  }
+
+  footer .footer-menu {
+    padding-bottom: 0;
   }
 }
 
